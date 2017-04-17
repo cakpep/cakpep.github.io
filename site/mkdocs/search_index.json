@@ -26,6 +26,56 @@
             "title": "JSON Example"
         }, 
         {
+            "location": "/authentificate/", 
+            "text": "Home\n\n\nAuthentication for Bukalapak API\n\n- \nAuthenticate\n\n    - \nURL\n\n    - \nParameters\n\n    - \nExample Request\n\n    - \nExample Response\n\n\nAuthentication for Bukalapak API\n\n\nAuthenticate\n\n\nReturn token to enable access for \nrequired authentication's resources\n\nUser Bukalapak \nuser\n and \npassword\n for server authentication.\n\n\n\n\nUse \nPOST\n http method.\n\n\n\n\nURL\n\n\n\n\nhttps://api.bukalapak.com/v1/authenticate.json\n\n\n\n\nParameters\n\n\nNone\n\n\nPOST request data\n\n\nNone\n\n\nExample Request\n\n\ncurl -u billy:Highs3creT https://api.bukalapak.com/v1/authenticate.json -X POST\n\n\n\n\n\nExample Response\n\n\nSuccess response:\n\n\n{\n  \nstatus\n:\nOK\n,\n  \nuser_id\n: \n157324\n,\n  \ntoken\n: \nU8Ch2LigkVhdI3XwYRA\n,\n  \nmessage\n:null\n}\n\n\n\n\nFailed response\n\n\n{\n  \nstatus\n:\nERROR\n,\n  \nuser_id\n:\nnull\n,\n  \nmessage\n:\nInvalid password\n\n}\n\n\n\n\nCommands\n\n\n\n\n\n\n\n\nPlugin\n\n\nREADME\n\n\n\n\n\n\n\n\n\n\nDropbox\n\n\n[plugins/dropbox/README.md] [PlDb]\n\n\n\n\n\n\nGithub\n\n\n[plugins/github/README.md] [PlGh]\n\n\n\n\n\n\nGoogle Drive\n\n\n[plugins/googledrive/README.md] [PlGd]\n\n\n\n\n\n\nOneDrive\n\n\n[plugins/onedrive/README.md] [PlOd]\n\n\n\n\n\n\nMedium\n\n\n[plugins/medium/README.md] [PlMe]\n\n\n\n\n\n\nGoogle Analytics\n\n\n[plugins/googleanalytics/README.md] [PlGa]", 
+            "title": "Autenticate"
+        }, 
+        {
+            "location": "/authentificate/#home", 
+            "text": "Authentication for Bukalapak API \n-  Authenticate \n    -  URL \n    -  Parameters \n    -  Example Request \n    -  Example Response", 
+            "title": "&laquo; Home"
+        }, 
+        {
+            "location": "/authentificate/#authentication-for-bukalapak-api", 
+            "text": "", 
+            "title": "Authentication for Bukalapak API"
+        }, 
+        {
+            "location": "/authentificate/#authenticate", 
+            "text": "Return token to enable access for  required authentication's resources \nUser Bukalapak  user  and  password  for server authentication.   Use  POST  http method.", 
+            "title": "Authenticate"
+        }, 
+        {
+            "location": "/authentificate/#url", 
+            "text": "https://api.bukalapak.com/v1/authenticate.json", 
+            "title": "URL"
+        }, 
+        {
+            "location": "/authentificate/#parameters", 
+            "text": "None", 
+            "title": "Parameters"
+        }, 
+        {
+            "location": "/authentificate/#post-request-data", 
+            "text": "None", 
+            "title": "POST request data"
+        }, 
+        {
+            "location": "/authentificate/#example-request", 
+            "text": "curl -u billy:Highs3creT https://api.bukalapak.com/v1/authenticate.json -X POST", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/authentificate/#example-response", 
+            "text": "Success response:  {\n   status : OK ,\n   user_id :  157324 ,\n   token :  U8Ch2LigkVhdI3XwYRA ,\n   message :null\n}  Failed response  {\n   status : ERROR ,\n   user_id : null ,\n   message : Invalid password \n}", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/authentificate/#commands", 
+            "text": "Plugin  README      Dropbox  [plugins/dropbox/README.md] [PlDb]    Github  [plugins/github/README.md] [PlGh]    Google Drive  [plugins/googledrive/README.md] [PlGd]    OneDrive  [plugins/onedrive/README.md] [PlOd]    Medium  [plugins/medium/README.md] [PlMe]    Google Analytics  [plugins/googleanalytics/README.md] [PlGa]", 
+            "title": "Commands"
+        }, 
+        {
             "location": "/about/", 
             "text": "About\n\n\nDocumentation test\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.", 
             "title": "About"

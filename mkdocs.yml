@@ -1,5 +1,6 @@
 site_name: Cakpep API Docs
 pages:
     - Home: index.md
+    - Autenticate: authentificate.md
     - About: about.md
 theme: readthedocs

@@ -11,6 +11,14 @@
 
     
     <url>
+     <loc>/authentificate/</loc>
+     <lastmod>2017-04-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/about/</loc>
      <lastmod>2017-04-17</lastmod>
      <changefreq>daily</changefreq>

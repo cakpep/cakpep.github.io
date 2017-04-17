@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>About - Cakpep API Docs</title>
+  <title>Autenticate - Cakpep API Docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "About";
-    var mkdocs_page_input_path = "about.md";
-    var mkdocs_page_url = "/about/";
+    var mkdocs_page_name = "Autenticate";
+    var mkdocs_page_input_path = "authentificate.md";
+    var mkdocs_page_url = "/authentificate/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -52,26 +52,32 @@
     <a class="" href="..">Home</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../authentificate/">Autenticate</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">About</a>
+    <a class="current" href="./">Autenticate</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#about">About</a></li>
+    <li class="toctree-l2"><a href="#home">&laquo; Home</a></li>
+    
+
+    <li class="toctree-l2"><a href="#authentication-for-bukalapak-api">Authentication for Bukalapak API</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#commands">Commands</a></li>
+            <li><a class="toctree-l3" href="#authenticate">Authenticate</a></li>
         
         </ul>
     
 
+    <li class="toctree-l2"><a href="#commands">Commands</a></li>
+    
+
     </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
 	    </li>
           
         </ul>
@@ -96,7 +102,7 @@
     
       
     
-    <li>About</li>
+    <li>Autenticate</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -106,15 +112,86 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="about">About</h1>
-<p>Documentation test</p>
-<h2 id="commands">Commands</h2>
+                <h3 id="home"><a href="README.md">&laquo; Home</a></h3>
+<p><a href="#authentication-for-bukalapak-api">Authentication for Bukalapak API</a>
+- <a href="#authenticate">Authenticate</a>
+    - <a href="#url">URL</a>
+    - <a href="#parameters">Parameters</a>
+    - <a href="#example-request">Example Request</a>
+    - <a href="#example-response">Example Response</a></p>
+<h2 id="authentication-for-bukalapak-api">Authentication for Bukalapak API</h2>
+<h3 id="authenticate">Authenticate</h3>
+<p>Return token to enable access for <code>required authentication's resources</code>
+User Bukalapak <code>user</code> and <code>password</code> for server authentication.</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li>Use <code>POST</code> http method.</li>
 </ul>
+<h5 id="url">URL</h5>
+<ul>
+<li><a href="">https://api.bukalapak.com/v1/authenticate.json</a></li>
+</ul>
+<h5 id="parameters">Parameters</h5>
+<p>None</p>
+<h5 id="post-request-data">POST request data</h5>
+<p>None</p>
+<h5 id="example-request">Example Request</h5>
+<pre><code class="sh">curl -u billy:Highs3creT https://api.bukalapak.com/v1/authenticate.json -X POST
+
+</code></pre>
+
+<h5 id="example-response">Example Response</h5>
+<p>Success response:</p>
+<pre><code class="json">{
+  &quot;status&quot;:&quot;OK&quot;,
+  &quot;user_id&quot;: &quot;157324&quot;,
+  &quot;token&quot;: &quot;U8Ch2LigkVhdI3XwYRA&quot;,
+  &quot;message&quot;:null
+}
+</code></pre>
+
+<p>Failed response</p>
+<pre><code class="json">{
+  &quot;status&quot;:&quot;ERROR&quot;,
+  &quot;user_id&quot;:&quot;null&quot;,
+  &quot;message&quot;:&quot;Invalid password&quot;
+}
+</code></pre>
+
+<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Plugin</th>
+<th>README</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dropbox</td>
+<td>[plugins/dropbox/README.md] [PlDb]</td>
+</tr>
+<tr>
+<td>Github</td>
+<td>[plugins/github/README.md] [PlGh]</td>
+</tr>
+<tr>
+<td>Google Drive</td>
+<td>[plugins/googledrive/README.md] [PlGd]</td>
+</tr>
+<tr>
+<td>OneDrive</td>
+<td>[plugins/onedrive/README.md] [PlOd]</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>[plugins/medium/README.md] [PlMe]</td>
+</tr>
+<tr>
+<td>Google Analytics</td>
+<td>[plugins/googleanalytics/README.md] [PlGa]</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -122,8 +199,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../authentificate/" class="btn btn-neutral" title="Autenticate"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -149,8 +228,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../authentificate/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
