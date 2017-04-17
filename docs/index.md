@@ -15,3 +15,21 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+## JSON Example
+
+```json
+{
+    ....
+    "require": {
+        "redawning/coreobjects": "0.2"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://ajiy@bitbucket.org/redawning/coreobjects.git",
+            "tags-path": "commits/tag"
+        }
+    ]
+    ....
+}
+```
