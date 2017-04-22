@@ -1,6 +1,10 @@
-site_name: Cakpep API Docs
+site_name: Nusantara Mall API Docs
 pages:
     - Home: index.md
-    - Autenticate: authentificate.md
+    - Authentication: authentification.md
+    - Users: users.md
+    - Categories: categories.md
+    - Brands: brands.md
+    - Products: products.md
     - About: about.md
 theme: readthedocs

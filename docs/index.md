@@ -1,35 +1,4 @@
-# Welcome to MkDocs
+# Nusantara Mall API Documentation
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-## JSON Example
-
-```json
-{
-    ....
-    "require": {
-        "redawning/coreobjects": "0.2"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://ajiy@bitbucket.org/redawning/coreobjects.git",
-            "tags-path": "commits/tag"
-        }
-    ]
-    ....
-}
-```
+Repositories
+`https://bitbucket.org/akatechs/nusantara-mall-web-app`

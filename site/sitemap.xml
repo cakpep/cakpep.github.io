@@ -4,15 +4,47 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-04-17</lastmod>
+     <lastmod>2017-04-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/authentificate/</loc>
-     <lastmod>2017-04-17</lastmod>
+     <loc>/authentification/</loc>
+     <lastmod>2017-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/users/</loc>
+     <lastmod>2017-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/categories/</loc>
+     <lastmod>2017-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/brands/</loc>
+     <lastmod>2017-04-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/products/</loc>
+     <lastmod>2017-04-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +52,7 @@
     
     <url>
      <loc>/about/</loc>
-     <lastmod>2017-04-17</lastmod>
+     <lastmod>2017-04-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
