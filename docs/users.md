@@ -136,6 +136,34 @@ This endpoint retrieves specific user profile.
 ##### URL
 `PUT` `http://nusantara-mall.org/index.php/api/users/(:user_id)`
 
+##### Parameters
+| Parameter name | Required |
+| ------ | ------ |
+| username | false |
+| surname | false |
+| email | false |
+| phone | false |
+| address1 | false |
+| address2 | false |
+| city | false |
+| zip | false |
+| langlat | false |
+| fb_id | false |
+| g_id | false |
+| g_photo | false |
+| creation_date | false |
+| google_plus | false |
+| skype | false |
+| facebook | false |
+| wishlist | false |
+| last_login | false |
+| user_type | false |
+| user_type_till | false |
+| left_product_type | false |
+| downloads | false |
+| country | false |
+| state | false |
+
 ##### Example Request
 ````sh
 curl "http://nusantara-mall.org/index.php/api/users/9" -H "Content-Type: application/x-www-form-urlencoded" -d "state=Sleman&city=Yogyakarta"  -X "PUT"

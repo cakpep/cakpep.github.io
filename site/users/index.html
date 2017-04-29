@@ -86,6 +86,8 @@
         
             <li><a class="toctree-l3" href="#url_1">URL</a></li>
         
+            <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
+        
             <li><a class="toctree-l3" href="#example-request_1">Example Request</a></li>
         
             <li><a class="toctree-l3" href="#example-response_1">Example Response</a></li>
@@ -294,6 +296,113 @@
 <p>This endpoint retrieves specific user profile.</p>
 <h5 id="url_1">URL</h5>
 <p><code>PUT</code> <code>http://nusantara-mall.org/index.php/api/users/(:user_id)</code></p>
+<h5 id="parameters">Parameters</h5>
+<table>
+<thead>
+<tr>
+<th>Parameter name</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>false</td>
+</tr>
+<tr>
+<td>surname</td>
+<td>false</td>
+</tr>
+<tr>
+<td>email</td>
+<td>false</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>false</td>
+</tr>
+<tr>
+<td>address1</td>
+<td>false</td>
+</tr>
+<tr>
+<td>address2</td>
+<td>false</td>
+</tr>
+<tr>
+<td>city</td>
+<td>false</td>
+</tr>
+<tr>
+<td>zip</td>
+<td>false</td>
+</tr>
+<tr>
+<td>langlat</td>
+<td>false</td>
+</tr>
+<tr>
+<td>fb_id</td>
+<td>false</td>
+</tr>
+<tr>
+<td>g_id</td>
+<td>false</td>
+</tr>
+<tr>
+<td>g_photo</td>
+<td>false</td>
+</tr>
+<tr>
+<td>creation_date</td>
+<td>false</td>
+</tr>
+<tr>
+<td>google_plus</td>
+<td>false</td>
+</tr>
+<tr>
+<td>skype</td>
+<td>false</td>
+</tr>
+<tr>
+<td>facebook</td>
+<td>false</td>
+</tr>
+<tr>
+<td>wishlist</td>
+<td>false</td>
+</tr>
+<tr>
+<td>last_login</td>
+<td>false</td>
+</tr>
+<tr>
+<td>user_type</td>
+<td>false</td>
+</tr>
+<tr>
+<td>user_type_till</td>
+<td>false</td>
+</tr>
+<tr>
+<td>left_product_type</td>
+<td>false</td>
+</tr>
+<tr>
+<td>downloads</td>
+<td>false</td>
+</tr>
+<tr>
+<td>country</td>
+<td>false</td>
+</tr>
+<tr>
+<td>state</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
 <h5 id="example-request_1">Example Request</h5>
 <pre><code class="sh">curl &quot;http://nusantara-mall.org/index.php/api/users/9&quot; -H &quot;Content-Type: application/x-www-form-urlencoded&quot; -d &quot;state=Sleman&amp;city=Yogyakarta&quot;  -X &quot;PUT&quot;
 
