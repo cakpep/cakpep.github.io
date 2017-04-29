@@ -3,15 +3,15 @@
 ## Get All Products
 This endpoint retrieves all products.
 ##### URL GET ALL PRODUCTS
-`GET` `http://nusantara.detotty.com/index.php/api/products`
+`GET` `http://nusantara-mall.org/index.php/api/products`
 
 ##### URL GET BY FILTER
-`http://nusantara.detotty.com/index.php/api/products?filter[product_id]=1`
-`http://nusantara.detotty.com/index.php/api/products?filter[category]=1&filter[sub_category]=5`
+`http://nusantara-mall.org/index.php/api/products?filter[product_id]=1`
+`http://nusantara-mall.org/index.php/api/products?filter[category]=1&filter[sub_category]=5`
 
 ##### Example Request
 ````sh
-curl "http://nusantara.detotty.com/index.php/api/products" -X "GET"
+curl "http://nusantara-mall.org/index.php/api/products" -X "GET"
 
 ````
 
@@ -115,11 +115,11 @@ Failed response
 ## Get Latest Products
 This endpoint retrieves latest products.
 ##### URL GET THE LATEST PRODUCTS
-`GET` `http://nusantara.detotty.com/index.php/api/products/latest`
+`GET` `http://nusantara-mall.org/index.php/api/products/latest`
 
 ##### Example Request
 ````sh
-curl "http://nusantara.detotty.com/index.php/api/products/latest" -X "GET"
+curl "http://nusantara-mall.org/index.php/api/products/latest" -X "GET"
 
 ````
 
@@ -426,11 +426,11 @@ Success response:
 ## Get Todays Deal
 This endpoint retrieves todays deal products.
 ##### URL GET THE TODAYS DEAL PRODUCTS
-`GET` `http://nusantara.detotty.com/index.php/api/products/todaysdeal`
+`GET` `http://nusantara-mall.org/index.php/api/products/todaysdeal`
 
 ##### Example Request
 ````sh
-curl "http://nusantara.detotty.com/index.php/api/products/todaysdeal" -X "GET"
+curl "http://nusantara-mall.org/index.php/api/products/todaysdeal" -X "GET"
 
 ````
 
@@ -675,11 +675,11 @@ Success response:
 ## Get featured
 This endpoint retrieves featured products.
 ##### URL GET THE FEATURED PRODUCTS
-`GET` `http://nusantara.detotty.com/index.php/api/products/featured`
+`GET` `http://nusantara-mall.org/index.php/api/products/featured`
 
 ##### Example Request
 ````sh
-curl "http://nusantara.detotty.com/index.php/api/products/featured" -X "GET"
+curl "http://nusantara-mall.org/index.php/api/products/featured" -X "GET"
 
 ````
 

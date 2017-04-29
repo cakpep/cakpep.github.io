@@ -13,7 +13,7 @@ This endpoint for user authentifacation.
 
 ##### Example Request
 ````sh
-curl "http://nusantara.detotty.com/index.php/api/auth" -H "Content-Type: application/x-www-form-urlencoded" -d "username=cakpep&password=cakpep"  -X "POST"
+http://nusantara-mall.org
 
 ````
 

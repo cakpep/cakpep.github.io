@@ -3,14 +3,14 @@
 ## Get All Categories
 This endpoint retrieves all categories.
 ##### URL
-`GET` `http://nusantara.detotty.com/index.php/api/categories`
+`GET` `http://nusantara-mall.org/index.php/api/categories`
 
 ##### URL GET BY FILTER
-`http://nusantara.detotty.com/index.php/api/categories?filter[category_id]=1`
+`http://nusantara-mall.org/index.php/api/categories?filter[category_id]=1`
 
 ##### Example Request
 ````sh
-curl "http://nusantara.detotty.com/index.php/api/categories" -X "GET"
+curl "http://nusantara-mall.org/index.php/api/categories" -X "GET"
 
 ````
 ##### Example Response

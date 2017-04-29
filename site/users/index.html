@@ -80,6 +80,32 @@
         </ul>
     
 
+    <li class="toctree-l2"><a href="#put-update-user-profile">PUT Update User profile</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#url_1">URL</a></li>
+        
+            <li><a class="toctree-l3" href="#example-request_1">Example Request</a></li>
+        
+            <li><a class="toctree-l3" href="#example-response_1">Example Response</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#put-update-password-user">PUT Update Password User</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#url_2">URL</a></li>
+        
+            <li><a class="toctree-l3" href="#example-request_2">Example Request</a></li>
+        
+            <li><a class="toctree-l3" href="#example-response_2">Example Response</a></li>
+        
+        </ul>
+    
+
     </ul>
 	    </li>
           
@@ -139,11 +165,11 @@
 <h2 id="get-user-profile">Get User profile</h2>
 <p>This endpoint retrieves specific user profile.</p>
 <h5 id="url">URL</h5>
-<p><code>GET</code> <code>http://nusantara.detotty.com/index.php/api/users/(:user_id)</code></p>
+<p><code>GET</code> <code>http://nusantara-mall.org/index.php/api/users/(:user_id)</code></p>
 <h5 id="url-get-by-id">URL GET BY ID</h5>
-<p><code>http://nusantara.detotty.com/index.php/api/users/7</code></p>
+<p><code>http://nusantara-mall.org/index.php/api/users/9</code></p>
 <h5 id="example-request">Example Request</h5>
-<pre><code class="sh">curl &quot;http://nusantara.detotty.com/index.php/api/users/7&quot; -X &quot;GET&quot;
+<pre><code class="sh">curl &quot;http://nusantara-mall.org/index.php/api/users/9&quot; -X &quot;GET&quot;
 
 </code></pre>
 
@@ -155,36 +181,99 @@
     &quot;totalResults&quot;: 1,
     &quot;data&quot;: [
         {
-            &quot;user_id&quot;: &quot;1&quot;,
-            &quot;username&quot;: &quot;rorurehy&quot;,
-            &quot;surname&quot;: &quot;Fleming&quot;,
-            &quot;email&quot;: &quot;miromumyp@yahoo.com&quot;,
-            &quot;phone&quot;: &quot;+532-55-5730682&quot;,
-            &quot;address1&quot;: &quot;Fuga Enim necessitatibus proident omnis quis aut voluptatibus iste dolore quis neque adipisicing ut&quot;,
-            &quot;address2&quot;: &quot;Et ea vitae porro error labore impedit autem voluptates vel voluptas dolores mollitia&quot;,
-            &quot;city&quot;: &quot;Voluptatem totam sit in fugiat delectus illo aliquam culpa dolor&quot;,
-            &quot;zip&quot;: &quot;88604&quot;,
-            &quot;langlat&quot;: &quot;&quot;,
+            &quot;user_id&quot;: &quot;9&quot;,
+            &quot;username&quot;: &quot;De&quot;,
+            &quot;surname&quot;: &quot;Totty&quot;,
+            &quot;email&quot;: &quot;detotty@gmail.com&quot;,
+            &quot;phone&quot;: &quot;+628988448846&quot;,
+            &quot;address1&quot;: &quot;Jl Raya janti no 240&quot;,
+            &quot;address2&quot;: &quot;Tegalpasar, Banguntapan&quot;,
+            &quot;city&quot;: &quot;Bantul&quot;,
+            &quot;zip&quot;: &quot;55198&quot;,
+            &quot;langlat&quot;: &quot;(-7.798602099999999, 110.40890149999996)&quot;,
             &quot;fb_id&quot;: null,
             &quot;g_id&quot;: null,
             &quot;g_photo&quot;: null,
-            &quot;creation_date&quot;: &quot;1474453509&quot;,
+            &quot;creation_date&quot;: &quot;2017-04-06&quot;,
             &quot;google_plus&quot;: null,
             &quot;skype&quot;: null,
             &quot;facebook&quot;: null,
-            &quot;wishlist&quot;: [ ],
-            &quot;last_login&quot;: &quot;1492833461&quot;,
+            &quot;wishlist&quot;: [
+                &quot;4&quot;,
+                &quot;22&quot;,
+                &quot;21&quot;
+            ],
+            &quot;last_login&quot;: &quot;2017-04-29&quot;,
             &quot;user_type&quot;: &quot;default&quot;,
             &quot;user_type_till&quot;: null,
             &quot;left_product_type&quot;: [ ],
             &quot;downloads&quot;: [ ],
-            &quot;country&quot;: null,
-            &quot;state&quot;: null,
-            &quot;totalPurchase&quot;: 10,
-            &quot;wishedProducts&quot;: 10,
-            &quot;last7Days&quot;: 10,
-            &quot;last30Days&quot;: 10,
-            &quot;orderHistory&quot;: [ ]
+            &quot;country&quot;: &quot;Indonesia&quot;,
+            &quot;state&quot;: &quot;Ponorogo&quot;,
+            &quot;currency&quot;: &quot;Rp&quot;,
+            &quot;totalPurchase&quot;: &quot;0.00&quot;,
+            &quot;last7Days&quot;: &quot;0.00&quot;,
+            &quot;last30Days&quot;: &quot;0.00&quot;,
+            &quot;orderHistory&quot;: [
+                {
+                    &quot;sale_id&quot;: &quot;1&quot;,
+                    &quot;sale_code&quot;: &quot;2017041&quot;,
+                    &quot;buyer&quot;: &quot;9&quot;,
+                    &quot;product_details&quot;: {
+                        &quot;3c59dc048e8850243be8079a5c74d079&quot;: {
+                            &quot;id&quot;: &quot;21&quot;,
+                            &quot;qty&quot;: 12,
+                            &quot;option&quot;: &quot;{\&quot;color\&quot;:{\&quot;title\&quot;:\&quot;Color\&quot;,\&quot;value\&quot;:\&quot;rgba(204,204,204,1)\&quot;}}&quot;,
+                            &quot;price&quot;: 300000,
+                            &quot;name&quot;: &quot;Souvenir A001&quot;,
+                            &quot;shipping&quot;: &quot;15000&quot;,
+                            &quot;tax&quot;: 0,
+                            &quot;image&quot;: &quot;http://localhost/nusantara_mall_web/uploads/product_image/product_21_1_thumb.jpg&quot;,
+                            &quot;coupon&quot;: &quot;&quot;,
+                            &quot;rowid&quot;: &quot;3c59dc048e8850243be8079a5c74d079&quot;,
+                            &quot;subtotal&quot;: 3600000
+                        }
+                    },
+                    &quot;shipping_address&quot;: {
+                        &quot;firstname&quot;: &quot;De&quot;,
+                        &quot;lastname&quot;: &quot;Totty&quot;,
+                        &quot;address1&quot;: &quot;Jl Raya janti no 240&quot;,
+                        &quot;address2&quot;: &quot;Tegalpasar, Banguntapan&quot;,
+                        &quot;zip&quot;: &quot;55198&quot;,
+                        &quot;email&quot;: &quot;detotty@gmail.com&quot;,
+                        &quot;phone&quot;: &quot;+628988448846&quot;,
+                        &quot;langlat&quot;: &quot;(-7.798602099999999, 110.40890149999996)&quot;,
+                        &quot;payment_type&quot;: &quot;cash_on_delivery&quot;
+                    },
+                    &quot;vat&quot;: &quot;0&quot;,
+                    &quot;vat_percent&quot;: &quot;&quot;,
+                    &quot;shipping&quot;: &quot;180000&quot;,
+                    &quot;payment_type&quot;: &quot;cash_on_delivery&quot;,
+                    &quot;payment_status&quot;: [
+                        {
+                            &quot;admin&quot;: &quot;&quot;,
+                            &quot;status&quot;: &quot;due&quot;
+                        }
+                    ],
+                    &quot;payment_details&quot;: &quot;&quot;,
+                    &quot;payment_timestamp&quot;: null,
+                    &quot;grand_total&quot;: &quot;3780000&quot;,
+                    &quot;sale_datetime&quot;: &quot;1492944526&quot;,
+                    &quot;delivary_datetime&quot;: &quot;&quot;,
+                    &quot;delivery_status&quot;: [
+                        {
+                            &quot;admin&quot;: &quot;&quot;,
+                            &quot;status&quot;: &quot;pending&quot;,
+                            &quot;delivery_time&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;viewed&quot;: &quot;ok&quot;
+                }
+            ],
+            &quot;image&quot;: {
+                &quot;original&quot;: &quot;http://localhost/siteproject/nusantara-mall-web-app/uploads/user_image/user_9.jpg?t=1493453108&quot;,
+                &quot;thumb&quot;: &quot;http://localhost/siteproject/nusantara-mall-web-app/uploads/user_image/user_9_thumb.jpg?t=1493453108&quot;
+            }
         }
     ]
 
@@ -198,6 +287,166 @@
     &quot;totalResults&quot;: 0,
     &quot;data&quot;: [ ]
 
+}
+</code></pre>
+
+<h2 id="put-update-user-profile">PUT Update User profile</h2>
+<p>This endpoint retrieves specific user profile.</p>
+<h5 id="url_1">URL</h5>
+<p><code>PUT</code> <code>http://nusantara-mall.org/index.php/api/users/(:user_id)</code></p>
+<h5 id="example-request_1">Example Request</h5>
+<pre><code class="sh">curl &quot;http://nusantara-mall.org/index.php/api/users/9&quot; -H &quot;Content-Type: application/x-www-form-urlencoded&quot; -d &quot;state=Sleman&amp;city=Yogyakarta&quot;  -X &quot;PUT&quot;
+
+</code></pre>
+
+<h5 id="example-response_1">Example Response</h5>
+<p>Success response:</p>
+<pre><code class="json">{
+
+    &quot;status&quot;: true,
+    &quot;totalResults&quot;: 1,
+    &quot;data&quot;: [
+        {
+            &quot;user_id&quot;: &quot;9&quot;,
+            &quot;username&quot;: &quot;De&quot;,
+            &quot;surname&quot;: &quot;Totty&quot;,
+            &quot;email&quot;: &quot;detotty@gmail.com&quot;,
+            &quot;phone&quot;: &quot;+628988448846&quot;,
+            &quot;address1&quot;: &quot;Jl Raya janti no 240&quot;,
+            &quot;address2&quot;: &quot;Tegalpasar, Banguntapan&quot;,
+            &quot;city&quot;: &quot;Yogyakarta&quot;,
+            &quot;zip&quot;: &quot;55198&quot;,
+            &quot;langlat&quot;: &quot;(-7.798602099999999, 110.40890149999996)&quot;,
+            &quot;fb_id&quot;: null,
+            &quot;g_id&quot;: null,
+            &quot;g_photo&quot;: null,
+            &quot;creation_date&quot;: &quot;2017-04-06&quot;,
+            &quot;google_plus&quot;: null,
+            &quot;skype&quot;: null,
+            &quot;facebook&quot;: null,
+            &quot;wishlist&quot;: [
+                &quot;4&quot;,
+                &quot;22&quot;,
+                &quot;21&quot;
+            ],
+            &quot;last_login&quot;: &quot;2017-04-29&quot;,
+            &quot;user_type&quot;: &quot;default&quot;,
+            &quot;user_type_till&quot;: null,
+            &quot;left_product_type&quot;: [ ],
+            &quot;downloads&quot;: [ ],
+            &quot;country&quot;: &quot;Indonesia&quot;,
+            &quot;state&quot;: &quot;Sleman&quot;,
+            &quot;currency&quot;: &quot;Rp&quot;,
+            &quot;totalPurchase&quot;: &quot;0.00&quot;,
+            &quot;last7Days&quot;: &quot;0.00&quot;,
+            &quot;last30Days&quot;: &quot;0.00&quot;,
+            &quot;orderHistory&quot;: [
+                {
+                    &quot;sale_id&quot;: &quot;1&quot;,
+                    &quot;sale_code&quot;: &quot;2017041&quot;,
+                    &quot;buyer&quot;: &quot;9&quot;,
+                    &quot;product_details&quot;: {
+                        &quot;3c59dc048e8850243be8079a5c74d079&quot;: {
+                            &quot;id&quot;: &quot;21&quot;,
+                            &quot;qty&quot;: 12,
+                            &quot;option&quot;: &quot;{\&quot;color\&quot;:{\&quot;title\&quot;:\&quot;Color\&quot;,\&quot;value\&quot;:\&quot;rgba(204,204,204,1)\&quot;}}&quot;,
+                            &quot;price&quot;: 300000,
+                            &quot;name&quot;: &quot;Souvenir A001&quot;,
+                            &quot;shipping&quot;: &quot;15000&quot;,
+                            &quot;tax&quot;: 0,
+                            &quot;image&quot;: &quot;http://localhost/nusantara_mall_web/uploads/product_image/product_21_1_thumb.jpg&quot;,
+                            &quot;coupon&quot;: &quot;&quot;,
+                            &quot;rowid&quot;: &quot;3c59dc048e8850243be8079a5c74d079&quot;,
+                            &quot;subtotal&quot;: 3600000
+                        }
+                    },
+                    &quot;shipping_address&quot;: {
+                        &quot;firstname&quot;: &quot;De&quot;,
+                        &quot;lastname&quot;: &quot;Totty&quot;,
+                        &quot;address1&quot;: &quot;Jl Raya janti no 240&quot;,
+                        &quot;address2&quot;: &quot;Tegalpasar, Banguntapan&quot;,
+                        &quot;zip&quot;: &quot;55198&quot;,
+                        &quot;email&quot;: &quot;detotty@gmail.com&quot;,
+                        &quot;phone&quot;: &quot;+628988448846&quot;,
+                        &quot;langlat&quot;: &quot;(-7.798602099999999, 110.40890149999996)&quot;,
+                        &quot;payment_type&quot;: &quot;cash_on_delivery&quot;
+                    },
+                    &quot;vat&quot;: &quot;0&quot;,
+                    &quot;vat_percent&quot;: &quot;&quot;,
+                    &quot;shipping&quot;: &quot;180000&quot;,
+                    &quot;payment_type&quot;: &quot;cash_on_delivery&quot;,
+                    &quot;payment_status&quot;: [
+                        {
+                            &quot;admin&quot;: &quot;&quot;,
+                            &quot;status&quot;: &quot;due&quot;
+                        }
+                    ],
+                    &quot;payment_details&quot;: &quot;&quot;,
+                    &quot;payment_timestamp&quot;: null,
+                    &quot;grand_total&quot;: &quot;3780000&quot;,
+                    &quot;sale_datetime&quot;: &quot;1492944526&quot;,
+                    &quot;delivary_datetime&quot;: &quot;&quot;,
+                    &quot;delivery_status&quot;: [
+                        {
+                            &quot;admin&quot;: &quot;&quot;,
+                            &quot;status&quot;: &quot;pending&quot;,
+                            &quot;delivery_time&quot;: &quot;&quot;
+                        }
+                    ],
+                    &quot;viewed&quot;: &quot;ok&quot;
+                }
+            ],
+            &quot;image&quot;: {
+                &quot;original&quot;: &quot;http://localhost/siteproject/nusantara-mall-web-app/uploads/user_image/user_9.jpg?t=1493453108&quot;,
+                &quot;thumb&quot;: &quot;http://localhost/siteproject/nusantara-mall-web-app/uploads/user_image/user_9_thumb.jpg?t=1493453108&quot;
+            }
+        }
+    ]
+
+}
+</code></pre>
+
+<p>User not found response</p>
+<pre><code class="json">{
+
+    &quot;status&quot;: true,
+    &quot;totalResults&quot;: 0,
+    &quot;data&quot;: [ ]
+
+}
+</code></pre>
+
+<h2 id="put-update-password-user">PUT Update Password User</h2>
+<p>This endpoint update specific user password.</p>
+<h5 id="url_2">URL</h5>
+<p><code>PUT</code> <code>http://nusantara-mall.org/index.php/api/users/password/(:user_id)</code></p>
+<h5 id="example-request_2">Example Request</h5>
+<pre><code class="sh">curl &quot;http://nusantara-mall.org/index.php/api/users/password/9&quot; -H &quot;Content-Type: application/x-www-form-urlencoded&quot; -d &quot;oldPassword=12345&amp;newPassword=abc&amp;confirmNewPassword=abc&quot;  -X &quot;PUT&quot;
+
+</code></pre>
+
+<h5 id="example-response_2">Example Response</h5>
+<p>Success response:</p>
+<pre><code class="json">{
+    &quot;status&quot;: true,
+    &quot;totalResults&quot;: 1,
+    &quot;data&quot;: {
+        &quot;message&quot;: &quot;ok&quot;
+    }
+}
+</code></pre>
+
+<p>parameter not allowed</p>
+<pre><code class="json">{
+    &quot;status&quot;: false,
+    &quot;message&quot;: &quot;state Param not allowed&quot;
+}
+</code></pre>
+
+<p>Passwords Did Not Match!</p>
+<pre><code class="json">{
+    &quot;status&quot;: false,
+    &quot;message&quot;: &quot;Passwords Did Not Match!&quot;
 }
 </code></pre>
               
